@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Branding Strategy for Female Cosmetics</title>
+	<link rel="stylesheet" href="/css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="/css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+      width: 100%;
+      
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 50pt;
+			transform: translate(-50%, -50%);
+			color: #015c92;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: #015c92;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: #47b1ee;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul >
+			<li><a href="/view/index.html">Home</a></li>
+			<li><a href="/view/index.html">Skill</a></li>
+			<li class="empty"></li>
+			<li><a href="/view/index.html">About</a></li>
+			<li><a href="/view/index.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="/assets/img/myweb.png" class="full-width-image" alt="Cosmetics Branding Project">
+			<!-- <h1 class="project-title text-blue">Branding Strategy<br>for Female Cosmetics</h1> -->
+		</div>
+		<div class="breadcrumb">
+			<a href="/view/index.html">Home</a> / Nigime
+		</div>
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Overview</h2>
+						<p>Nigime adalah sebuah platform website streaming yang dirancang untuk memberikan akses hiburan yang gratis, lengkap, dan mudah diakses oleh semua kalangan. Fokus utama dari proyek ini adalah menyediakan layanan streaming anime, film, dan serial populer dengan antarmuka yang sederhana namun menarik, serta navigasi yang user-friendly agar pengguna dapat menikmati pengalaman menonton secara nyaman tanpa gangguan.<br> Website ini dikembangkan sebagai solusi alternatif dari platform streaming berbayar, dengan menghadirkan konten yang selalu diperbarui secara rutin, kualitas video yang baik, serta sistem pencarian dan filter yang memudahkan pengguna menemukan tayangan favorit mereka. Selain itu, Nigime juga mengusung prinsip akses terbuka, memungkinkan siapa saja untuk menikmati hiburan berkualitas tanpa biaya langganan.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Key Outcomes</h2>
+						<ul>
+							<li>Akses Streaming Gratis dan Legal</li>
+							<li>Koleksi Konten Lengkap dan Terupdate</li>
+							<li>User Interface yang Ramah Pengguna</li>
+							<li>Fitur Pencarian dan Kategori yang Efisien</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="/assets/img/Screenshot 2025-05-04 211907.png" alt="Dashboard App">
+								</div>
+								<div class="slider-slide">
+									<img src="/assets/img/Screenshot 2025-05-04 212055.png" alt="Cosmetics Project">
+								</div>
+								<div class="slider-slide">
+									<img src="/assets/img/Screenshot 2025-05-04 212139.png" alt="iPad App">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			tertarik kah ?<br>inbox jo di koksonmokson@gmail.com</h2>
+			<p>designed & developed by Muhammad Iqbal 2025</p>
+		</footer>
+	</body>
+	</html>

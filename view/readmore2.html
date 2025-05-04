@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>User Experience Design for Dashboard App</title>
+	<link rel="stylesheet" href="/css/bootstrap-grid.css" type="text/css">
+	<link rel="stylesheet" href="/css/styles.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<style>
+		.project-container {
+			background-color: white;
+			width: 100%;
+			margin: 0 auto;
+			box-shadow: 0 0 30px rgba(0,0,0,0.1);
+		}
+		.full-width-image {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.breadcrumb {
+			padding: 20px;
+			background-color: #f8f9fa;
+			font-family: 'IBM Plex Mono', monospace;
+			font-size: 14px;
+		}
+		.breadcrumb a {
+			color: black;
+			text-decoration: none;
+		}
+		.breadcrumb a:hover {
+			text-decoration: underline;
+		}
+		.project-title {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			font-size: 40pt;
+			transform: translate(-50%, -50%);
+			color: #015c92;
+			text-align: center;
+			text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+		}
+		.image-container {
+			position: relative;
+		}
+		
+		/* Slider Styles */
+		.project-slider {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+		}
+		.slider-container {
+			display: flex;
+			transition: transform 0.5s ease;
+			width: 300%;
+		}
+		.slider-slide {
+			width: 33.33%;
+			flex-shrink: 0;
+		}
+		.slider-slide img {
+			width: 100%;
+			height: 500px;
+			object-fit: cover;
+		}
+		.slider-controls {
+			position: absolute;
+			bottom: 20px;
+			left: 50%;
+			transform: translateX(-50%);
+			display: flex;
+			gap: 10px;
+		}
+		.slider-dot {
+			width: 10px;
+			height: 10px;
+			background-color: #015c92;
+			border-radius: 50%;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		.slider-dot.active {
+			background-color: #47b1ee;
+		}
+		
+		/* Slider Checkbox Hack */
+		.slider-toggle {
+			display: none;
+		}
+		#slide1:checked ~ .slider-container {
+			transform: translateX(0);
+		}
+		#slide2:checked ~ .slider-container {
+			transform: translateX(-33.33%);
+		}
+		#slide3:checked ~ .slider-container {
+			transform: translateX(-66.66%);
+		}
+	</style>
+</head>
+
+<body>
+	<nav>
+		<ul >
+			<li><a href="/view/index.html">Home</a></li>
+			<li><a href="/view/index.html">Skill</a></li>
+			<li class="empty"></li>
+			<li><a href="/view/index.html">About</a></li>
+			<li><a href="/view/index.html">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div class="project-container">
+		<div class="image-container">
+			<img src="/assets/img/goodfood2.png" class="full-width-image" alt="Dashboard App UX Design Project">
+			<!-- <h1 class="project-title text-blue">User Experience Design<br>for Dashboard App</h1> -->
+		</div>
+		<div class="breadcrumb">
+			<a href="/view/index.html">Home</a> / Goodfood
+		</div>
+		<section class="project blue" style="padding-top: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Overview</h2>
+						<p>GoodFood adalah sebuah platform website pemesanan makanan yang menawarkan solusi praktis, cepat, dan hemat biaya bagi pengguna yang ingin menikmati hidangan lezat tanpa keluar rumah. Proyek ini dikembangkan untuk menjawab kebutuhan masyarakat akan layanan pesan-antar makanan yang terjangkau namun tetap berkualitas, dengan fokus pada segmen konsumen yang mencari makanan murah meriah dari berbagai pilihan kuliner lokal.</p>
+            <br>
+            <p>Dengan antarmuka yang intuitif dan fitur pencarian yang efisien, GoodFood memungkinkan pengguna untuk menelusuri berbagai menu dari restoran atau penjual makanan terdekat, memesan secara langsung melalui website, dan memilih metode pembayaran serta pengiriman yang fleksibel. Selain itu, platform ini juga mendukung promosi dan diskon khusus yang membuat pengalaman berbelanja makanan menjadi lebih menyenangkan dan ekonomis.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Research & Discovery</h2>
+						<ul>
+							<li>Analisis Pasar dan Kompetitor</li>
+							<li>Survei dan Wawancara Pengguna Potensial</li>
+							<li>Observasi UMKM Kuliner Lokal</li>
+							<li>Uji Coba Prototipe Awal (User Testing)</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>UX Design Strategy</h2>
+						<p>Pendekatan desain yang komprehensif berfokus pada:</p>
+						<ul>
+							<li>User-Centered Design (UCD)</li>
+							<li>Simple & Clear Navigation</li>
+							<li>Mobile-First Approach</li>
+							<li>Visual Simplicity with Local Flavor</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Key Outcomes</h2>
+						<p>Hasil utama dari proyek desain UX:</p>
+						<ul>
+							<li>Kemudahan Akses Pemesanan Makanan Murah</li>
+							<li>Peningkatan Jangkauan UMKM Kuliner Lokal</li>
+							<li>Pengalaman Pengguna yang Cepat dan Nyaman</li>
+							<li>Meningkatnya Retensi dan Loyalitas Pengguna</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="project blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm">
+						<h2>Project Gallery</h2>
+						<div class="project-slider">
+							<input type="radio" name="slider" id="slide1" class="slider-toggle" checked>
+							<input type="radio" name="slider" id="slide2" class="slider-toggle">
+							<input type="radio" name="slider" id="slide3" class="slider-toggle">
+							
+							<div class="slider-container">
+								<div class="slider-slide">
+									<img src="/assets/img/goodfood1.png" alt="Dashboard App Main Interface">
+								</div>
+								<div class="slider-slide">
+									<img src="/assets/img/goodfood3.png" alt="Dashboard App Analytics View">
+								</div>
+								<div class="slider-slide">
+									<img src="/assets/img/goodfood4.png" alt="Dashboard App Mobile View">
+								</div>
+							</div>
+							
+							<div class="slider-controls">
+								<label for="slide1" class="slider-dot"></label>
+								<label for="slide2" class="slider-dot"></label>
+								<label for="slide3" class="slider-dot"></label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<footer id="contact">
+		<h2>Interested in<br>
+			tertarik kah ?<br>inbox jo di koksonmokson@gmail.com</h2>
+			<p>designed & developed by Muhammad Iqbal 2025</p>
+		</footer>
+	</body>
+	</html>
