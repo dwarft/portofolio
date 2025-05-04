@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'naga-api-font';
-  src: url(/assets/font/Habanero.ttf);
+  src: url('../assets/font/Habanero.ttf');
 }
 
 @font-face {
 	font-family: 'saruman';
-	src: url(/assets/font/KGPerfectPenmanship.ttf);
+	src: url('../assets/font/KGPerfectPenmanship.ttf');
 }
 
 * {
