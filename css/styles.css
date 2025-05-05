@@ -57,6 +57,7 @@ nav{
 	width: 100%;
   box-shadow: 1px 2px 30px rgba(0,0,0,0.2);
 }
+
 header{
 	top:70px;
 	position: relative;
@@ -194,4 +195,62 @@ nav li a:hover{
 
 .text-blue {
 	color: #015c92;
+}
+
+@media screen and (max-width: 768px) {
+
+	nav ul .empty {
+		background-color: red;
+		display: none;
+	}
+
+	nav ul li, nav ul li a {
+		font-size: 12px;
+		margin: 0 5px;
+		padding: 0;
+	}
+
+	.left-section h1 {
+		font-size: 3rem;
+	}
+	.hero-section img {
+		width: 20rem;
+		height: 20rem;
+	}
+	.intro-img {
+		background: url('/assets/img/download\ \(7\).jpeg');
+	}
+	.project {
+		padding: 20px;
+	}
+	h1, h2 {
+		font-size: 30px;
+	}
+	h2 {
+		font-size: 20px;
+	}
+	h1, h2, .skill-list {
+		font-size: 20px;
+	}
+
+	footer h2 {
+		font-size: 18px;
+		margin-bottom: 50px;
+		text-align: center;
+	}
+
+	footer {
+		width: 100%;
+		margin: 0;
+	}
+	
+	figure {
+		width: 100%;
+		height: auto;
+		margin: 20px 0;
+	}
+
+	figure img {
+		border-radius: 5px;
+	}
 }
