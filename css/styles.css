@@ -253,4 +253,20 @@ nav li a:hover{
 	figure img {
 		border-radius: 5px;
 	}
+
+	.hero-section {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.hero-section img {
+		width: 100%;
+		height: auto;
+		border-radius: 50%;
+	}
+
+	.mt-screen {
+		margin-top: 20rem !important;
+	}
 }
